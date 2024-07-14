@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="stylesheets/services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="nav-bar">
+        <%- include('partials/header') %>
+    </section>
+
+    <div class="services">
+        <div class="container">
+            <div class="content">
+                <h1>SERVICES</h1>
+                <hr>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="/images/web-development.svg" alt="Web Development">
+                </div>
+                <div class="service-content">
+                    <h2>Web Development</h2>
+                    <hr>
+                    <p>We specialize in creating dynamic, high-performance websites that deliver a seamless user
+                        experience. Our expertise ensures your site is fast, secure, and scalable to meet your business
+                        needs.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="/images/ui-design.svg" alt="UI/UX Design">
+                </div>
+                <div class="service-content">
+                    <h2>UI/UX Design</h2>
+                    <hr>
+                    <p>Our design team crafts visually stunning and user-friendly websites that reflect your brand's
+                        identity. We focus on aesthetics, usability, and engagement to make your site stand out.</p>
+                </div>
+            </div>
+            <div class="service-card ">
+                <div class="service-image">
+                    <img src="/images/seo.svg" alt="SEO Optimization">
+                </div>
+                <div class="service-content">
+                    <h2>SEO Optimization</h2>
+                    <hr>
+                    <p>Boost your online visibility with our SEO services. We use the latest techniques to improve your
+                        search engine rankings, drive organic traffic, and increase your website's reach and impact.</p>
+                </div>
+            </div>
+            <div class="service-card ">
+                <div class="service-image">
+                    <img src="/images/digital-marketing.svg" alt="Digital Marketing">
+                </div>
+                <div class="service-content">
+
+                    <h2>Digital Marketing</h2>
+                    <hr>
+                    <p>Our digital marketing services help businesses grow their online presence and reach their target
+                        audience effectively. We specialize in enhancing brand visibility, driving traffic, and
+                        increasing conversions through strategic SEO.</p>
+                </div>
+            </div>
+            <div class="service-card ">
+                <div class="service-image">
+                    <img src="/images/hosting.svg" alt="Web-Hosting">
+                </div>
+                <div class="service-content">
+
+                    <h2>Hosting</h2>
+                    <hr>
+                    <p>BeingxBot provides reliable and secure hosting services to ensure your website is always online
+                        and performing optimally. Our hosting solutions offer fast load times, regular backups, and
+                        robust security measures.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gap"></div>
+    </div>
+
+
+        <%- include('partials/footer') %>
+</body>
+
+</html>
