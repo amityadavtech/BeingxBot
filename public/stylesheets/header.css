@@ -77,7 +77,7 @@ body {
 @media (max-width: 868px) {
     .header nav ul {
         position: fixed;
-        top: 80px;
+        top: 70px;
         left: -100%;
         background: #111;
         height: 100vh;
