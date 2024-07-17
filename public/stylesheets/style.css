@@ -19,7 +19,7 @@ body {
   color: #333;
 }
 
-.span{
+.span {
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 45px;
@@ -27,14 +27,14 @@ body {
   font-style: normal;
 }
 
-.company{
+.company {
 
   color: var(--other-color);
 }
 
 
 
-.nav-bar{
+.nav-bar {
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -58,6 +58,15 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 45px;
+}
+
+.typedText {
+  text-transform: capitalize;
+  color: var(--text-color-third);
+}
+
+.typed-cursor {
+  color: var(--theme-color);
 }
 
 .text-section {
@@ -428,7 +437,8 @@ body {
   .content h1 {
     font-size: 60px;
   }
-  .span{
+
+  .span {
     font-size: 40px;
   }
 }
@@ -673,10 +683,9 @@ body {
   }
 
 
-  .blob-container{
+  .blob-container {
     display: none;
   }
 
 
 }
-
