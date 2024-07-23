@@ -24,6 +24,11 @@ body {
   z-index: 1000;
 }
 
+.plans{
+  background-color: #171717;
+
+}
+
 .container {
   width: 100%;
   max-width: 1390px;
@@ -31,8 +36,9 @@ body {
   padding: 35px 20px 0 20px;
 }
 
+
 .services {
-  padding: 25px 0 60px;
+  padding: 25px 0 0px;
   background: rgb(0, 0, 0);
   backdrop-filter: blur(10px);
   font-family: 'Poppins', sans-serif;

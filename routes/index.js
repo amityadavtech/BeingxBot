@@ -16,6 +16,11 @@ router.get('/services', function (req, res, next) {
   res.render('services', { title: 'Express' });
 });
 
+router.get('/checkout-plans', function (req, res, next) {
+  res.render('checkout-plans', { title: 'Express' });
+});
+
+
 /* GET contact page. */
 router.get('/contact', function (req, res, next) {
   res.render('contact', { title: 'Express' });

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeingxBot - Checkout-Plans</title>
+    <link rel="stylesheet" href="stylesheets/checkout-plans.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+</head>
+
+<body>
+    <section class="nav-bar">
+        <%- include('partials/header') %>
+    </section>
+    <div class="contact-container">
+        <h1 class="page-title">Get in Touch</h1>
+        <hr>
+        <form class="contact-form" name="contact-form">
+            <fieldset class="radio-group">
+                <legend class="radio-title">Select Your Plan</legend>
+                <div class="radio-option">
+                    <input type="radio" id="plan1" name="plan" value="Basic Plan" required>
+                    <label for="plan1">Basic Plan - $10</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="plan2" name="plan" value="Standard Plan" required>
+                    <label for="plan2">Standard Plan - $20</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="plan3" name="plan" value="Premium Plan" required>
+                    <label for="plan3">Premium Plan - $30</label>
+                </div>
+            </fieldset>
+
+
+            <label for="name" class="form-label">Name<span class="required">*</span></label>
+            <input type="text" id="name" name="your-name" placeholder="Enter your name" class="form-input" required>
+
+            <label for="number" class="form-label">Number<span class="required">*</span></label>
+            <input type="number" id="number" name="your-number" placeholder="Enter your number" class="form-input">
+
+            <label for="email" class="form-label">Email<span class="required">*</span></label>
+            <input type="email" id="email" name="your-email" placeholder="Enter your email" class="form-input" required>
+            <label for="message" class="form-label">Your Message</label>
+            <textarea id="message" name="message" rows="7" placeholder="Enter your message"
+                class="form-textarea"></textarea>
+
+
+            <button type="submit" class="form-submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Thank you! Your form is submitted successfully.</p>
+        </div>
+    </div>
+    <script src="https://www.chatbase.co/embed.min.js" chatbotId="SQNeU74uu7yMMTJdQ4yYB" domain="www.chatbase.co"
+        defer></script>
+    <script src="javascripts/chatbot.js"></script>
+    <section>
+        <%- include('partials/footer') %>
+    </section>
+    <script src="javascripts/checkout-plans.js"></script>
+</body>
+
+</html>
