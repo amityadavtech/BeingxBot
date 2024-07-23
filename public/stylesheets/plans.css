@@ -132,3 +132,15 @@
     color: var(--col);
     transition: all 0.3s ease;
 }
+
+@media screen and (max-width: 600px) {
+    
+    .pricing-card{
+
+        min-width: 285px;
+    }
+    .pricing-card .price{
+        font-size: 45px;
+    }
+
+}
