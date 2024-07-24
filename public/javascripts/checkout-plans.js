@@ -9,7 +9,7 @@ form.addEventListener('submit', e => {
     e.preventDefault();
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
-            modal.style.display = "block";
+            modal.style.display = "flex";
 })
     .catch(error => console.error('Error!', error.message));
  
@@ -21,7 +21,7 @@ span.onclick = function () {
 
 window.onclick = function (event) {
     if (event.target === modal) {
-        modal.style.display = "flex";
+        modal.style.display = "none";
     }
 }
 
