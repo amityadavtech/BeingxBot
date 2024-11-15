@@ -20,7 +20,6 @@ body {
 }
 
 .span {
-  margin-bottom: 20px;
   font-weight: 600;
   font-size: 45px;
   line-height: 1.3;
@@ -58,6 +57,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 45px;
+  min-height: 95vh;
 }
 
 .typedText {
@@ -490,6 +490,7 @@ body {
 
   .service-content h2 {
     font-size: 28px;
+    font-weight: bold;
   }
 
 
@@ -549,6 +550,9 @@ body {
   .text-section {
     max-width: 100%;
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .blob-container .blob-second {

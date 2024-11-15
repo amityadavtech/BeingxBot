@@ -61,7 +61,7 @@ srRight.reveal('.right-step .sec-container', { delay: 100 })
 
 
 let typingEffect = new Typed(".typedText", {
-  strings: ["BeingxBot:"],
+  strings: ["BeingxBot:)"],
   loop: true,
   typeSpeed: 100,
   backSpeed: 80,
