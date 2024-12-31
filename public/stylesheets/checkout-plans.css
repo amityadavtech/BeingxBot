@@ -13,7 +13,6 @@
 }
 
 /* General styles */
-
 body {
 	font-family: 'Poppins', sans-serif;
 	background-color: #F2F2F2;
@@ -27,11 +26,10 @@ body {
 	z-index: 1000;
 }
 
-
 .contact-container {
 	max-width: 85vw;
 	margin: 50px auto;
-	padding: 30px 60px;
+	padding: 20px 50px;
 	background-color: #FFFFFF;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	border-radius: 8px;
@@ -40,13 +38,13 @@ body {
 
 .page-title {
 	color: var(--other-color);
-	margin-bottom: 20px;
-	font-size: 2.5em;
+	margin-bottom: 15px;
+	font-size: 2.2em;
 }
 
 .page-title+hr {
-	width: 35%;
-	margin: 0px auto 42px;
+	width: 30%;
+	margin: 0px auto 20px;
 	border: 0;
 	border-top: 2px solid #fff;
 	border-color: var(--other-color);
@@ -59,7 +57,7 @@ body {
 }
 
 .form-label {
-	font-size: 1.4em;
+	font-size: 1.2em;
 	font-weight: 600;
 	color: var(--other-color);
 	margin-bottom: 5px;
@@ -69,18 +67,18 @@ body {
 
 .required {
 	color: #ff0000;
-	font-size: 16px;
+	font-size: 14px;
 	margin-left: 5px;
 }
 
 .form-input,
 .form-textarea {
 	width: 100%;
-	margin-bottom: 25px;
-	padding: 12px;
+	margin-bottom: 15px;
+	padding: 10px;
 	border: 1px solid black;
 	border-radius: 5px;
-	font-size: 16px;
+	font-size: 14px;
 	box-sizing: border-box;
 }
 
@@ -98,7 +96,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .radio-group {
 	width: 100%;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 	text-align: left;
 	padding: 0 10px;
 }
@@ -106,18 +104,18 @@ input[type="number"]::-webkit-inner-spin-button {
 .radio-title {
 	color: var(--other-color);
 	margin-bottom: 10px;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	font-weight: 600;
 }
 
 .radio-option {
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 	display: flex;
 	align-items: center;
 }
 
 .radio-option input[type="radio"] {
-	margin-right: 10px;
+	margin-right: 8px;
 }
 
 .form-textarea {
@@ -127,11 +125,11 @@ input[type="number"]::-webkit-inner-spin-button {
 .form-submit {
 	background-color: var(--theme-color);
 	color: #FFFFFF;
-	padding: 15px 25px;
+	padding: 12px 20px;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	font-weight: 600;
 	transition: background-color 0.3s;
 }
@@ -158,10 +156,10 @@ input[type="number"]::-webkit-inner-spin-button {
 .modal-content {
 	background-color: #FFFFFF;
 	margin: 5% auto;
-	padding: 20px;
+	padding: 15px;
 	border: 1px solid var(--theme-color);
 	width: 80%;
-	max-width: 500px;
+	max-width: 450px;
 	border-radius: 8px;
 	text-align: center;
 	display: flex;
@@ -172,7 +170,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .close {
 	color: black;
 	float: right;
-	font-size: 28px;
+	font-size: 24px;
 	font-weight: bold;
 	cursor: pointer;
 }
@@ -185,11 +183,115 @@ input[type="number"]::-webkit-inner-spin-button {
 	color: var(--theme-color);
 }
 
-@media screen and (max-width: 600px) {
-	.page-title{
-		font-size: 2.2em;
+/* Responsive Styles */
+
+/* For tablets and smaller screens (less than 900px) */
+@media screen and (max-width: 900px) {
+	.page-title {
+		font-size: 1.9em;
 	}
-	.contact-container{
-		padding: 30px 10px;
+
+	.contact-container {
+		padding: 20px 15px;
+		max-width: 90vw;
+	}
+
+	.form-label {
+		font-size: 1.1em;
+	}
+
+	.form-input,
+	.form-textarea {
+		font-size: 13px;
+		padding: 8px;
+	}
+
+	.form-submit {
+		font-size: 1.1em;
+		padding: 10px 18px;
+	}
+
+	.radio-title {
+		font-size: 1.1em;
+	}
+
+	.modal-content {
+		width: 90%;
+	}
+
+	.radio-option {
+		font-size: 12px;
+	}
+}
+
+/* For smaller screens (less than 600px) */
+@media screen and (max-width: 600px) {
+	.page-title {
+		font-size: 1.7em;
+	}
+
+	.contact-container {
+		padding: 15px 8px;
+	}
+
+	.form-label {
+		font-size: 1em;
+	}
+
+	.form-input,
+	.form-textarea {
+		font-size: 12px;
+		padding: 7px;
+	}
+
+	.form-submit {
+		font-size: 1.1em;
+		padding: 8px 12px;
+	}
+
+	.radio-title {
+		font-size: 1em;
+	}
+
+	.modal-content {
+		width: 90%;
+	}
+
+	.radio-option {
+		font-size: 11px;
+	}
+}
+
+/* For extra small screens (less than 400px) */
+@media screen and (max-width: 400px) {
+	.page-title {
+		font-size: 1.5em;
+	}
+
+	.contact-container {
+		padding: 10px 6px;
+	}
+
+	.form-label {
+		font-size: 0.9em;
+	}
+
+	.form-input,
+	.form-textarea {
+		font-size: 11px;
+		padding: 6px;
+	}
+
+	.form-submit {
+		font-size: 1.1em;
+		padding: 7px 10px;
+	}
+
+	.radio-title {
+		font-size: 0.9em;
+	}
+
+	.radio-option {
+		font-size: 10px;
 	}
 }
