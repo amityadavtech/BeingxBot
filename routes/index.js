@@ -31,4 +31,10 @@ router.get('/request-quote/', function (req, res, next) {
   res.render('request-quote', { title: 'Express' });
 });
 
+/* GET request quote page. */
+router.get('/faqs/', function (req, res, next) {
+  res.render('faqs', { title: 'Express' });
+});
+
+
 module.exports = router;
